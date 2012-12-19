@@ -19,6 +19,8 @@
 		9517B5591681F2EA0066CFC6 /* ZJTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9517B5581681F2EA0066CFC6 /* ZJTViewController.m */; };
 		9517B55C1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9517B55A1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib */; };
 		9517B55F1681F2EA0066CFC6 /* ZJTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9517B55D1681F2EA0066CFC6 /* ZJTViewController_iPad.xib */; };
+		9517B5841681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9517B5821681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.m */; };
+		9517B5851681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9517B5831681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		9517B5581681F2EA0066CFC6 /* ZJTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJTViewController.m; sourceTree = "<group>"; };
 		9517B55B1681F2EA0066CFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZJTViewController_iPhone.xib; sourceTree = "<group>"; };
 		9517B55E1681F2EA0066CFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZJTViewController_iPad.xib; sourceTree = "<group>"; };
+		9517B5811681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTHomeViewController_iPhone.h; sourceTree = "<group>"; };
+		9517B5821681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTHomeViewController_iPhone.m; sourceTree = "<group>"; };
+		9517B5831681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJTHomeViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +191,9 @@
 		9517B56F1681F5290066CFC6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9517B5811681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.h */,
+				9517B5821681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.m */,
+				9517B5831681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +256,7 @@
 				9517B5561681F2EA0066CFC6 /* Default-568h@2x.png in Resources */,
 				9517B55C1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib in Resources */,
 				9517B55F1681F2EA0066CFC6 /* ZJTViewController_iPad.xib in Resources */,
+				9517B5851681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 				9517B54C1681F2EA0066CFC6 /* main.m in Sources */,
 				9517B5501681F2EA0066CFC6 /* ZJTAppDelegate.m in Sources */,
 				9517B5591681F2EA0066CFC6 /* ZJTViewController.m in Sources */,
+				9517B5841681FB0A0066CFC6 /* ZJTHomeViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
