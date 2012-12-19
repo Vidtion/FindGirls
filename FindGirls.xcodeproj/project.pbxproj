@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9517B5401681F2E90066CFC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517B53F1681F2E90066CFC6 /* UIKit.framework */; };
+		9517B5421681F2E90066CFC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517B5411681F2E90066CFC6 /* Foundation.framework */; };
+		9517B5441681F2E90066CFC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517B5431681F2E90066CFC6 /* CoreGraphics.framework */; };
+		9517B54A1681F2EA0066CFC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9517B5481681F2E90066CFC6 /* InfoPlist.strings */; };
+		9517B54C1681F2EA0066CFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9517B54B1681F2EA0066CFC6 /* main.m */; };
+		9517B5501681F2EA0066CFC6 /* ZJTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9517B54F1681F2EA0066CFC6 /* ZJTAppDelegate.m */; };
+		9517B5521681F2EA0066CFC6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9517B5511681F2EA0066CFC6 /* Default.png */; };
+		9517B5541681F2EA0066CFC6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9517B5531681F2EA0066CFC6 /* Default@2x.png */; };
+		9517B5561681F2EA0066CFC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9517B5551681F2EA0066CFC6 /* Default-568h@2x.png */; };
+		9517B5591681F2EA0066CFC6 /* ZJTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9517B5581681F2EA0066CFC6 /* ZJTViewController.m */; };
+		9517B55C1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9517B55A1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib */; };
+		9517B55F1681F2EA0066CFC6 /* ZJTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9517B55D1681F2EA0066CFC6 /* ZJTViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9517B53B1681F2E90066CFC6 /* FindGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9517B53F1681F2E90066CFC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9517B5411681F2E90066CFC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9517B5431681F2E90066CFC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9517B5471681F2E90066CFC6 /* FindGirls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindGirls-Info.plist"; sourceTree = "<group>"; };
+		9517B5491681F2EA0066CFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9517B54B1681F2EA0066CFC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9517B54D1681F2EA0066CFC6 /* FindGirls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindGirls-Prefix.pch"; sourceTree = "<group>"; };
+		9517B54E1681F2EA0066CFC6 /* ZJTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJTAppDelegate.h; sourceTree = "<group>"; };
+		9517B54F1681F2EA0066CFC6 /* ZJTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJTAppDelegate.m; sourceTree = "<group>"; };
+		9517B5511681F2EA0066CFC6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9517B5531681F2EA0066CFC6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9517B5551681F2EA0066CFC6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9517B5571681F2EA0066CFC6 /* ZJTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJTViewController.h; sourceTree = "<group>"; };
+		9517B5581681F2EA0066CFC6 /* ZJTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJTViewController.m; sourceTree = "<group>"; };
+		9517B55B1681F2EA0066CFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZJTViewController_iPhone.xib; sourceTree = "<group>"; };
+		9517B55E1681F2EA0066CFC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZJTViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9517B5381681F2E90066CFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9517B5401681F2E90066CFC6 /* UIKit.framework in Frameworks */,
+				9517B5421681F2E90066CFC6 /* Foundation.framework in Frameworks */,
+				9517B5441681F2E90066CFC6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9517B5301681F2E90066CFC6 = {
+			isa = PBXGroup;
+			children = (
+				9517B5451681F2E90066CFC6 /* FindGirls */,
+				9517B53E1681F2E90066CFC6 /* Frameworks */,
+				9517B53C1681F2E90066CFC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9517B53C1681F2E90066CFC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9517B53B1681F2E90066CFC6 /* FindGirls.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9517B53E1681F2E90066CFC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9517B53F1681F2E90066CFC6 /* UIKit.framework */,
+				9517B5411681F2E90066CFC6 /* Foundation.framework */,
+				9517B5431681F2E90066CFC6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9517B5451681F2E90066CFC6 /* FindGirls */ = {
+			isa = PBXGroup;
+			children = (
+				9517B54E1681F2EA0066CFC6 /* ZJTAppDelegate.h */,
+				9517B54F1681F2EA0066CFC6 /* ZJTAppDelegate.m */,
+				9517B5571681F2EA0066CFC6 /* ZJTViewController.h */,
+				9517B5581681F2EA0066CFC6 /* ZJTViewController.m */,
+				9517B55A1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib */,
+				9517B55D1681F2EA0066CFC6 /* ZJTViewController_iPad.xib */,
+				9517B5461681F2E90066CFC6 /* Supporting Files */,
+			);
+			path = FindGirls;
+			sourceTree = "<group>";
+		};
+		9517B5461681F2E90066CFC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9517B5471681F2E90066CFC6 /* FindGirls-Info.plist */,
+				9517B5481681F2E90066CFC6 /* InfoPlist.strings */,
+				9517B54B1681F2EA0066CFC6 /* main.m */,
+				9517B54D1681F2EA0066CFC6 /* FindGirls-Prefix.pch */,
+				9517B5511681F2EA0066CFC6 /* Default.png */,
+				9517B5531681F2EA0066CFC6 /* Default@2x.png */,
+				9517B5551681F2EA0066CFC6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9517B53A1681F2E90066CFC6 /* FindGirls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9517B5621681F2EA0066CFC6 /* Build configuration list for PBXNativeTarget "FindGirls" */;
+			buildPhases = (
+				9517B5371681F2E90066CFC6 /* Sources */,
+				9517B5381681F2E90066CFC6 /* Frameworks */,
+				9517B5391681F2E90066CFC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindGirls;
+			productName = FindGirls;
+			productReference = 9517B53B1681F2E90066CFC6 /* FindGirls.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9517B5321681F2E90066CFC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZJT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ZJT;
+			};
+			buildConfigurationList = 9517B5351681F2E90066CFC6 /* Build configuration list for PBXProject "FindGirls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9517B5301681F2E90066CFC6;
+			productRefGroup = 9517B53C1681F2E90066CFC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9517B53A1681F2E90066CFC6 /* FindGirls */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9517B5391681F2E90066CFC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9517B54A1681F2EA0066CFC6 /* InfoPlist.strings in Resources */,
+				9517B5521681F2EA0066CFC6 /* Default.png in Resources */,
+				9517B5541681F2EA0066CFC6 /* Default@2x.png in Resources */,
+				9517B5561681F2EA0066CFC6 /* Default-568h@2x.png in Resources */,
+				9517B55C1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib in Resources */,
+				9517B55F1681F2EA0066CFC6 /* ZJTViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9517B5371681F2E90066CFC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9517B54C1681F2EA0066CFC6 /* main.m in Sources */,
+				9517B5501681F2EA0066CFC6 /* ZJTAppDelegate.m in Sources */,
+				9517B5591681F2EA0066CFC6 /* ZJTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9517B5481681F2E90066CFC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9517B5491681F2EA0066CFC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9517B55A1681F2EA0066CFC6 /* ZJTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9517B55B1681F2EA0066CFC6 /* en */,
+			);
+			name = ZJTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		9517B55D1681F2EA0066CFC6 /* ZJTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9517B55E1681F2EA0066CFC6 /* en */,
+			);
+			name = ZJTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9517B5601681F2EA0066CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9517B5611681F2EA0066CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9517B5631681F2EA0066CFC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindGirls/FindGirls-Prefix.pch";
+				INFOPLIST_FILE = "FindGirls/FindGirls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9517B5641681F2EA0066CFC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindGirls/FindGirls-Prefix.pch";
+				INFOPLIST_FILE = "FindGirls/FindGirls-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9517B5351681F2E90066CFC6 /* Build configuration list for PBXProject "FindGirls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9517B5601681F2EA0066CFC6 /* Debug */,
+				9517B5611681F2EA0066CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9517B5621681F2EA0066CFC6 /* Build configuration list for PBXNativeTarget "FindGirls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9517B5631681F2EA0066CFC6 /* Debug */,
+				9517B5641681F2EA0066CFC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9517B5321681F2E90066CFC6 /* Project object */;
+}
