@@ -85,6 +85,14 @@
 		9517B5451681F2E90066CFC6 /* FindGirls */ = {
 			isa = PBXGroup;
 			children = (
+				9517B5651681F4B00066CFC6 /* NetWork */,
+				9517B5661681F4B00066CFC6 /* ThirdParty */,
+				9517B5671681F4B00066CFC6 /* Models */,
+				9517B56A1681F4B00066CFC6 /* Views */,
+				9517B56F1681F5290066CFC6 /* Controllers */,
+				9517B5691681F4B00066CFC6 /* Nibs */,
+				9517B5681681F4B00066CFC6 /* Tools */,
+				9517B56D1681F4B00066CFC6 /* Resources */,
 				9517B54E1681F2EA0066CFC6 /* ZJTAppDelegate.h */,
 				9517B54F1681F2EA0066CFC6 /* ZJTAppDelegate.m */,
 				9517B5571681F2EA0066CFC6 /* ZJTViewController.h */,
@@ -108,6 +116,78 @@
 				9517B5551681F2EA0066CFC6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9517B5651681F4B00066CFC6 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		9517B5661681F4B00066CFC6 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		9517B5671681F4B00066CFC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9517B5681681F4B00066CFC6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9517B5691681F4B00066CFC6 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		9517B56A1681F4B00066CFC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9517B56B1681F4B00066CFC6 /* TableCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9517B56B1681F4B00066CFC6 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		9517B56D1681F4B00066CFC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9517B56E1681F4B00066CFC6 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9517B56E1681F4B00066CFC6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9517B56F1681F5290066CFC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +315,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -256,7 +336,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -270,6 +350,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FindGirls/FindGirls-Prefix.pch";
 				INFOPLIST_FILE = "FindGirls/FindGirls-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +362,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FindGirls/FindGirls-Prefix.pch";
 				INFOPLIST_FILE = "FindGirls/FindGirls-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,6 +387,7 @@
 				9517B5641681F2EA0066CFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
