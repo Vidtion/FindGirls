@@ -1,19 +1,18 @@
 //
-//  ZJTHomeViewController_iPhone.m
+//  ZJTRightViewController_iPhone.m
 //  FindGirls
 //
-//  Created by Patrick.Z on 12/19/12.
+//  Created by Patrick.Z on 12/20/12.
 //  Copyright (c) 2012 ZJT. All rights reserved.
 //
 
+#import "ZJTRightViewController_iPhone.h"
 
-#import "ZJTHomeViewController_iPhone.h"
-
-@interface ZJTHomeViewController_iPhone ()
+@interface ZJTRightViewController_iPhone ()
 
 @end
 
-@implementation ZJTHomeViewController_iPhone
+@implementation ZJTRightViewController_iPhone
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

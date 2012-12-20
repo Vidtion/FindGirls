@@ -9,6 +9,11 @@
 #import "ZJTAppDelegate.h"
 
 #import "ZJTViewController.h"
+#import "ZJTHomeViewController_iPhone.h"
+#import "ZJTLeftViewController_iPhone.h"
+#import "ZJTRightViewController_iPhone.h"
+
+#import "DDMenuController.h"
 
 @implementation ZJTAppDelegate
 
@@ -22,14 +27,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[ZJTViewController alloc] initWithNibName:@"ZJTViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[ZJTViewController alloc] initWithNibName:@"ZJTViewController_iPad" bundle:nil] autorelease];
-    }
-    self.window.rootViewController = self.viewController;
+    
+    ZJTHomeViewController_iPhone *homeController = [[ZJTHomeViewController_iPhone alloc] initWithNibName:@"ZJTHomeViewController_iPhone" bundle:nil];
+    
+    UINavigationController *mainController = [[UINavigationController alloc] initWithRootViewController:homeController];
+    [mainController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_light_background.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    DDMenuController *rootController = [[[DDMenuController alloc] initWithRootViewController:mainController] autorelease];
+    
+    ZJTLeftViewController_iPhone *leftController = [[ZJTLeftViewController_iPhone alloc] initWithNibName:@"ZJTLeftViewController_iPhone" bundle:nil];
+    ZJTRightViewController_iPhone *rightController = [[ZJTRightViewController_iPhone alloc] initWithNibName:@"ZJTRightViewController_iPhone" bundle:nil];
+    
+    rootController.leftViewController = leftController;
+    rootController.rightViewController = rightController;
+    
+    self.window.rootViewController = rootController;
     [self.window makeKeyAndVisible];
+    
+    [leftController release];
+    [rightController release];
+    [homeController release];
+    [mainController release];
+    
     return YES;
 }
 

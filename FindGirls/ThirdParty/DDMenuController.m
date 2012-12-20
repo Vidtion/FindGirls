@@ -26,8 +26,10 @@
 
 #import "DDMenuController.h"
 
+#define NAVIGATION_BAR_BTN_RECT         CGRectMake(0.0f, 0.0f, 32.0f, 32.0f)
+
 #define kMenuFullWidth 320.0f
-#define kMenuDisplayedWidth 280.0f
+#define kMenuDisplayedWidth 260.0f
 #define kMenuOverlayWidth (self.view.bounds.size.width - kMenuDisplayedWidth)
 #define kMenuBounceOffset 10.0f
 #define kMenuBounceDuration .3f
@@ -52,7 +54,7 @@
 
 - (id)initWithRootViewController:(UIViewController*)controller {
     if ((self = [self init])) {
-        _root = controller;
+        _root = [controller retain];
     }
     return self;
 }
@@ -80,15 +82,31 @@
         tap.delegate = (id<UIGestureRecognizerDelegate>)self;
         [self.view addGestureRecognizer:tap];
         [tap setEnabled:NO];
-        _tap = tap;
+        _tap = [tap retain];
+        [tap release];
     }
     
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    
+    [_tap release];
     _tap = nil;
+    [_pan release];
     _pan = nil;
+}
+
+-(void)dealloc
+{
+    [_left release];
+    [_right release];
+    [_root release];
+    
+    [_tap release];
+    [_pan release];
+    
+    [super dealloc];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
@@ -327,6 +345,9 @@
         [_root.view.layer addAnimation:animation forKey:nil];
         [CATransaction commit];   
     
+        [keyTimes release];
+        [values release];
+        [timingFunctions release];
     }    
     
 }
@@ -403,8 +424,13 @@
     }
     
     if (_menuFlags.canShowLeft) {
-        UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(showLeft:)];
-        topController.navigationItem.leftBarButtonItem = button;
+        UIButton *nNavBtn = [[UIButton alloc] initWithFrame:NAVIGATION_BAR_BTN_RECT];
+        [nNavBtn setBackgroundImage:[UIImage imageNamed:@"slide_navigator_button.png"] forState:UIControlStateNormal];
+        [nNavBtn setBackgroundImage:[UIImage imageNamed:@"slide_navigator_button_pressed.png"] forState:UIControlStateHighlighted];
+        [nNavBtn addTarget:self action:@selector(showLeft:) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *nBtnItem = [[UIBarButtonItem alloc] initWithCustomView:nNavBtn];
+        topController.navigationItem.leftBarButtonItem = nBtnItem;
+        [nBtnItem release];
     } else {
 		if(topController.navigationItem.leftBarButtonItem.target == self) {
 			topController.navigationItem.leftBarButtonItem = nil;
@@ -414,6 +440,7 @@
     if (_menuFlags.canShowRight) {
         UIBarButtonItem *button = [[barButtonItemClass alloc] initWithImage:[UIImage imageNamed:@"nav_menu_icon.png"] style:UIBarButtonItemStyleBordered  target:self action:@selector(showRight:)];
         topController.navigationItem.rightBarButtonItem = button;
+        [button release];
     } else {
 		if(topController.navigationItem.rightBarButtonItem.target == self) {
 			topController.navigationItem.rightBarButtonItem = nil;
@@ -567,20 +594,23 @@
 }
 
 - (void)setRightViewController:(UIViewController *)rightController {
-    _right = rightController;
+    [_right release];
+    _right = [rightController retain];
     _menuFlags.canShowRight = (_right!=nil);
     [self resetNavButtons];
 }
 
 - (void)setLeftViewController:(UIViewController *)leftController {
-    _left = leftController;
+    [_left release];
+    _left = [leftController retain];
     _menuFlags.canShowLeft = (_left!=nil);
     [self resetNavButtons];
 }
 
 - (void)setRootViewController:(UIViewController *)rootViewController {
     UIViewController *tempRoot = _root;
-    _root = rootViewController;
+    [_root release];
+    _root = [rootViewController retain];
     
     if (_root) {
         
@@ -596,7 +626,9 @@
         UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
         pan.delegate = (id<UIGestureRecognizerDelegate>)self;
         [view addGestureRecognizer:pan];
-        _pan = pan;
+        [_pan release];
+        _pan = [pan retain];
+        [pan release];
         
     } else {
         
